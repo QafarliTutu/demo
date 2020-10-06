@@ -2,31 +2,13 @@ server:
   port: ${PORT:8080}
 
 spring:
-
   datasource:
     url: jdbc:postgresql://localhost:5432/database_test
     username: postgres
     password: secret
+    driver-class-name: org.postgresql.Driver
   jpa:
     generate-ddl: true
     show-sql: true
     hibernate:
       ddl-auto: create
-
-#  mail:
-#    host:  smtp.gmail.com
-#    port: 587
-#    username: myfirstcalculatorapp@gmail.com
-#    password: tutuqafarli
-#    properties:
-#      mail:
-#        smtp:
-#          starttls:
-#            enable: true
-#            required: true
-#          auth: true
-#          connectiontimeout: 5000
-#          timeout: 5000
-#          writetimeout: 5000
-
-
